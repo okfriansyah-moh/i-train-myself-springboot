@@ -21,7 +21,7 @@ public class UserService {
         /**
          * Logic to get all users
          */
-        return null;
+        return userRepository.findAll();
     }
 
     public User createUser(User user) throws UserExistException {

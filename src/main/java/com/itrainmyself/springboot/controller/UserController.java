@@ -26,10 +26,7 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> getAllUSers() {
-        /**
-         * Controller to get all users
-         */
-        return null;
+        return userService.getAllUsers();
     }
 
     @PostMapping("/users")
